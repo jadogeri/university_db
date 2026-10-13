@@ -1,0 +1,14 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "FastAPI backend inside Turborepo"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+]
+
+[tool.ruff]
+# Optional: Configuration for Ruff linter/formatter if you use it
+line-length = 88
+select = ["E", "F", "I"]
