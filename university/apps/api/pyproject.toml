@@ -1,12 +1,13 @@
 [project]
 name = "api"
 version = "0.1.0"
-description = "FastAPI backend inside Turborepo"
+description = "FastAPI backend inside a Turborepo"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "fastapi>=0.115.0",
+    "fastapi[standard]>=0.115.0",
 ]
+
 
 [tool.ruff]
 # Optional: Configuration for Ruff linter/formatter if you use it

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "fastapi dev src/main.py --port 8000",
-    "start": "fastapi run src/main.py --port 8000"
+    "dev": ".\\.venv\\Scripts\\python -m fastapi dev src/main.py --port 8000",
+    "start": ".\\.venv\\Scripts\\python -m fastapi run src/main.py --port 8000"
   }
 }
