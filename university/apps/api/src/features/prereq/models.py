@@ -2,7 +2,8 @@ from sqlalchemy import String, ForeignKey, PrimaryKeyConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 
 from pydantic import BaseModel, Field
-from university_db.university.apps.api.src.constants import TableNames
+from constants import TableNames
+
 
 class PrereqBase(BaseModel):
     course_id: str = Field(..., max_length=8)

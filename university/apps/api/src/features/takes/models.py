@@ -1,9 +1,11 @@
 
+from typing import Optional
+from sqlalchemy import String, Numeric, ForeignKey, PrimaryKeyConstraint
+from sqlalchemy.orm import Mapped, mapped_column
 
 
-
-from university_db.university.apps.api.src.constants import TableNames
-
+from database import Base
+from constants import TableNames
 
 class Takes(Base):
     __tablename__ = TableNames.TAKES

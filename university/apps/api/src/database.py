@@ -1,7 +1,7 @@
 # apps/api/src/database.py
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
-from src.config import settings
+from configs.db import db_settings as settings
 
 # 1. Pull the connection string dynamically from your secure Pydantic environment configurations
 DATABASE_URL = settings.database_url

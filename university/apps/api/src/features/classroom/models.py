@@ -1,8 +1,8 @@
 from typing import Optional
+from constants import TableNames
 from sqlalchemy import String, Numeric, PrimaryKeyConstraint
 from sqlalchemy.orm import Mapped, mapped_column
-from src.database import Base
-from src.constants import TableNames
+from database import Base
 
 class Classroom(Base):
     __tablename__ = TableNames.CLASSROOM

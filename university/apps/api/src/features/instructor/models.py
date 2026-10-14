@@ -1,8 +1,8 @@
 from typing import Optional
 from sqlalchemy import String, Numeric, ForeignKey, CheckConstraint
 from sqlalchemy.orm import Mapped, mapped_column
-from src.database import Base
-from src.constants import TableNames
+from database import Base
+from constants import TableNames
 
 class Instructor(Base):
     __tablename__ = TableNames.INSTRUCTOR

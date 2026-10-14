@@ -1,7 +1,7 @@
 from sqlalchemy import String, Numeric, PrimaryKeyConstraint, CheckConstraint
 from sqlalchemy.orm import Mapped, mapped_column
-from src.database import Base
-from src.constants import TableNames
+from database import Base
+from constants import TableNames
 
 class TimeSlot(Base):
     __tablename__ = TableNames.TIME

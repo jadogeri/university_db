@@ -1,3 +1,10 @@
+from typing import Optional
+from sqlalchemy import String, Numeric, ForeignKey, PrimaryKeyConstraint
+from sqlalchemy.orm import Mapped, mapped_column
+
+from database import Base
+from constants import TableNames
+
 class Teaches(Base):
     __tablename__ = TableNames.TEACHES
 
