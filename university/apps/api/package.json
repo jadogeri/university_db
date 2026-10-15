@@ -4,6 +4,17 @@
   "private": true,
   "scripts": {
     "dev": ".\\.venv\\Scripts\\python -m fastapi dev src/main.py --port 8000",
-    "start": ".\\.venv\\Scripts\\python -m fastapi run src/main.py --port 8000"
+    "start": ".\\.venv\\Scripts\\python -m fastapi run src/main.py --port 8000",
+    "db:migrate": ".\\.venv\\Scripts\\alembic upgrade head",
+    "db:migrate:step": ".\\.venv\\Scripts\\alembic upgrade +1",
+    "db:rollback": ".\\.venv\\Scripts\\alembic downgrade -1",
+    "db:rollback:base": ".\\.venv\\Scripts\\alembic downgrade base",
+    "db:generate": ".\\.venv\\Scripts\\alembic revision --autogenerate -m",
+    "db:generate:blank": ".\\.venv\\Scripts\\alembic revision -m",
+    "db:check": ".\\.venv\\Scripts\\alembic check",
+    "db:current": ".\\.venv\\Scripts\\alembic current",
+    "db:history": ".\\.venv\\Scripts\\alembic history --verbose",
+    "db:merge": ".\\.venv\\Scripts\\alembic merge -m \"merge_branch_heads\"",
+    "db:stamp": ".\\.venv\\Scripts\\alembic stamp"
   }
 }

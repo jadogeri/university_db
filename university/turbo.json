@@ -16,6 +16,39 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "db:migrate": {
+      "cache": false
+    },
+    "db:migrate:step": {
+      "cache": false
+    },
+    "db:rollback": {
+      "cache": false
+    },
+    "db:rollback:base": {
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:generate:blank": {
+      "cache": false
+    },
+    "db:check": {
+      "cache": false
+    },
+    "db:current": {
+      "cache": false
+    },
+    "db:history": {
+      "cache": false
+    },
+    "db:merge": {
+      "cache": false
+    },
+    "db:stamp": {
+      "cache": false
     }
   }
 }
